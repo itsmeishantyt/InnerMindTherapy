@@ -4,7 +4,7 @@ const CONFIG = {
   // If you want to use Formspree: set FORMSPREE_ID to your form ID (e.g. "f/abcd1234")
   // Then set USE_FORMSPREE = true. If false, the script will open the user's mail app via mailto.
   USE_FORMSPREE: true,
-  FORMSPREE_ID: "https://formspree.io/f/mnnwqqoa",
+  FORMSPREE_ID: "f/mnnwqqoa",
   // The email address that will receive booking requests when using mailto fallback:
   BOOKING_EMAIL: "itsmeishantyt@gmail.com"
 };
