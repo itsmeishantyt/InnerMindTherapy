@@ -1,149 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InnerMindTherapy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Inter", Arial, sans-serif;
-        }
-        body {
-            background: #eef2f7;
-        }
-
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, #4a90e2, #6bb5ff);
-            padding: 60px 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        header p {
-            font-size: 20px;
-            opacity: 0.9;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            max-width: 900px;
-            margin: 50px auto;
-            text-align: center;
-            padding: 40px;
-        }
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .hero p {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
-            max-width: 700px;
-            margin: 0 auto 30px auto;
-        }
-        .hero button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background: #4a90e2;
-            border: none;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .hero button:hover {
-            background: #3a78c2;
-        }
-
-        /* APPOINTMENT FORM */
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        }
-        .container h2 {
-            margin-bottom: 20px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 14px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-        button.submit {
-            width: 100%;
-            padding: 15px;
-            background: #4a90e2;
-            border: none;
-            color: white;
-            font-size: 18px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        button.submit:hover {
-            background: #3a78c2;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InnerMindTherapy | Trauma-informed Therapy</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>InnerMindTherapy</h1>
-        <p>Your journey toward clarity, peace, and emotional wellness begins here.</p>
-    </header>
+  <header class="site-header">
+    <div class="logo">InnerMindTherapy</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#therapists">Therapists</a>
+      <a href="#booking">Book</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <h2>Welcome to InnerMindTherapy</h2>
+  <main>
+    <section class="hero" id="top" aria-label="Welcome">
+      <div class="hero-content">
+        <h1>Trauma-informed therapy for modern life</h1>
         <p>
-            At InnerMindTherapy, we help you navigate stress, anxiety, trauma, and emotional challenges with professional mental health support. Book a session and take the first step toward healing.
+          Professional, discreet support for stress, trauma, anxiety and life transitions. Book a session in under 60 seconds.
         </p>
-        <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'});">Book an Appointment</button>
+        <a href="#booking" class="btn-primary">Request a Session</a>
+      </div>
     </section>
 
-    <div class="container" id="form">
-        <h2>Book an Appointment</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label>Your Name</label>
-            <input type="text" name="name" required />
+    <section id="about" class="section">
+      <h2>About InnerMindTherapy</h2>
+      <p>
+        InnerMindTherapy offers trauma-informed, evidence-based therapy tailored to young adults and professionals.
+        We prioritise clear communication, safety, and a calm environment where you can process experiences and build skills.
+      </p>
+    </section>
 
-            <label>Email</label>
-            <input type="email" name="email" required />
+    <section id="services" class="section section-grid">
+      <div>
+        <h2>What we offer</h2>
+        <ul>
+          <li>1:1 trauma-focused therapy (online & in-person where available)</li>
+          <li>Short-term stabilisation plans after difficult events</li>
+          <li>Tools for anxiety, sleep issues and flashbacks</li>
+          <li>Clinical letters and onward referral where appropriate</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Who it's for</h2>
+        <ul>
+          <li>Students balancing study and wellbeing</li>
+          <li>Professionals dealing with burnout or crisis</li>
+          <li>People recovering from sudden or long-term trauma</li>
+          <li>Anyone who wants confidential, non-judgemental support</li>
+        </ul>
+      </div>
+    </section>
 
-            <label>Preferred Date</label>
-            <input type="date" name="date" required />
+    <section id="therapists" class="section">
+      <h2>Meet the team</h2>
+      <p>
+        Our therapists are trained in trauma-informed approaches (EMDR, CBT and integrative counselling). We match you with the right therapist based on your needs and availability.
+      </p>
+    </section>
 
-            <label>Your Message</label>
-            <textarea name="message" rows="5" placeholder="Tell us what you're struggling with..." required></textarea>
-            <img src="logo.png" style="width:150px; display:block; margin:0 auto 20px;">
-            <button class="submit" type="submit">Submit</button>
-        </form>
-    </div>
+    <section id="booking" class="section booking-section">
+      <h2>Request an appointment</h2>
+      <p>
+        Complete the short form below. You'll either have an email drafted for you (so you can press send), or the form will submit via a form service to your inbox — replace placeholders with your email or Formspree ID before going live.
+      </p>
 
-    <footer>
-        © 2025 InnerMindTherapy — All Rights Reserved
-    </footer>
+      <form id="booking-form" novalidate>
+        <div class="form-row">
+          <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email address *</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+
+        <div class="form-row">
+          <label for="age">Age *</label>
+          <input type="number" id="age" name="age" min="16" max="120" required />
+        </div>
+
+        <div class="form-row">
+          <label for="sessionType">Preferred session type *</label>
+          <select id="sessionType" name="sessionType" required>
+            <option value="">Select an option</option>
+            <option value="online">Online video session</option>
+            <option value="in-person">In-person session (where available)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="availability">Availability</label>
+          <input type="text" id="availability" name="availability" placeholder="e.g. Weekday evenings after 6pm" />
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Anything you'd like us to know?</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Optional: a brief outline of what you'd like help with."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <!-- Option A: Use form service (Formspree recommended). Replace FORM_ID below if using Formspree.
+               Option B: Use JavaScript mailto fallback (will open user's mail app). -->
+          <button id="send-btn" type="submit" class="btn-primary">Send Booking Request</button>
+        </div>
+
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="disclaimer">
+        InnerMindTherapy is not an emergency service. If you are in immediate danger or thinking of harming yourself, contact local emergency services or a crisis line now.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> InnerMindTherapy</p>
+    <p><a id="contact-email" href="mailto:bookings@example.com">bookings@example.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
