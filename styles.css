@@ -178,3 +178,10 @@ input:focus, select:focus, textarea:focus{
   .nav{ display:flex; flex-wrap:wrap; gap:0.6rem; }
   .hero{ padding-top:5.6rem; }
 }
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 1.2rem 0 1.5rem 0;
+  display: block;
+}
