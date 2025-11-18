@@ -1,0 +1,150 @@
+[index.html](https://github.com/user-attachments/files/23597910/index.html)<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnerMindTherapy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", Arial, sans-serif;
+        }
+        body {
+            background: #eef2f7;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4a90e2, #6bb5ff);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 40px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+        .hero button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #4a90e2;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            background: #3a78c2;
+        }
+
+        /* APPOINTMENT FORM */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button.submit {
+            width: 100%;
+            padding: 15px;
+            background: #4a90e2;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button.submit:hover {
+            background: #3a78c2;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InnerMindTherapy</h1>
+        <p>Your journey toward clarity, peace, and emotional wellness begins here.</p>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to InnerMindTherapy</h2>
+        <p>
+            At InnerMindTherapy, we help you navigate stress, anxiety, trauma, and emotional challenges with professional mental health support. Book a session and take the first step toward healing.
+        </p>
+        <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'});">Book an Appointment</button>
+    </section>
+
+    <div class="container" id="form">
+        <h2>Book an Appointment</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label>Your Name</label>
+            <input type="text" name="name" required />
+
+            <label>Email</label>
+            <input type="email" name="email" required />
+
+            <label>Preferred Date</label>
+            <input type="date" name="date" required />
+
+            <label>Your Message</label>
+            <textarea name="message" rows="5" placeholder="Tell us what you're struggling with..." required></textarea>
+
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2025 InnerMindTherapy — All Rights Reserved
+    </footer>
+</body>
+</html>
+
